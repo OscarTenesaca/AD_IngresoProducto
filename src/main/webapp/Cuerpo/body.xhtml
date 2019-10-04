@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"> 
+
+<h:head>
+<title> todo supply a title</title>
+
+</h:head> 
+<body> 
+		
+			<ui:composition>
+			
+			
+		<h:form> <br /> <br />
+   
+   		<h:panelGrid columns="3">
+   
+   			<h:outputLabel value="Codigo" />
+  			<h:inputText value="#{controlproductos.modeloProducto.codigo}" 
+  							required="true"
+		 					requiredMessage="Ingrese el codigo"
+							id= "codigo" >
+							
+				<f:validator validatorId="vcodigo" /> 
+				</h:inputText>
+				
+				<h:message for= "codigo" style="color: red" />
+
+  			<h:outputLabel value="Nombre" />
+  			<h:inputText value="#{controlproductos.modeloProducto.nombre}" 
+  							required="true"
+		 					requiredMessage="Ingrese el nombre"
+							id= "nombre" >
+							
+						<f:validator validatorId="vnombre" /> 	
+						</h:inputText>
+						
+						<h:message for= "nombre" style="color: red" />
+  			 
+  			<h:outputLabel value="Stock" />
+  			<h:inputText value="#{controlproductos.modeloProducto.stock}" 
+  							required="true"
+		 					requiredMessage="Ingrese el stock"
+							id= "stock" >
+							<f:validator validatorId="vstock" /> 
+							
+							</h:inputText>
+							
+							<h:message for= "stock" style="color: red" />
+							
+							
+								
+							
+  			
+		
+			<h:commandButton action="#{controlproductos.guardarProducto()}" value="Guardar" />
+			
+			
+   		 </h:panelGrid>
+   		 
+   		 
+   		 
+   		 
+   		 
+   		 
+   		 </h:form>
+   		 
+   		 
+   		 
+		
+	
+</ui:composition>
+
+
+</body> 
+</html>

@@ -1,0 +1,60 @@
+*{
+	margin:0px;
+	padding: 0px;
+}
+
+div#contenedor{
+	
+	margin:auto;
+	width: 800px;
+	height: 900px;
+	background-color: c9e7f9;
+	
+	
+	
+	
+}
+
+div#cabecera{
+	
+	/* float: center;*/
+	width: autor;
+	height: 100px;
+	background-color: #cdf98d;
+	/*border: double;*/
+	
+	
+	
+	
+}
+
+div#menu{
+
+	float: left;
+	width: 200px;
+	height: 750px;
+	background-color: #2b6e41;
+	
+	
+	
+}
+
+div#cuerpo{
+	
+	float: right;
+	width: 600px;
+	height: 750px;
+	background-color: #f8f0fa;
+	
+}
+
+div#pie{
+	
+	float: inherit;
+	width: 800px;
+	height: 50px;
+
+	
+	
+	
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">                                     
+<html xmlns="http://www.w3.org/1999/xhtml"                                                                                                                    
+      xmlns:ui="http://java.sun.com/jsf/facelets"                                                                                                             
+      xmlns:f="http://java.sun.com/jsf/core"                                                                                                                  
+      xmlns:h="http://java.sun.com/jsf/html">                                                                                                                 
+                                                                                                                                                              
+	<h:head>                                                                                                                                                  
+		<title> todo supply a title  </title>                                                                                                                 
+	</h:head>                                                                                                                                                 
+<body>                                                                                                                                                        
+                                                                                                                                                              
+		<ui:composition>                                                                                                                                      
+				<h:form>                                                                                                                                      
+					<h:panelGrid columns="1" style="margin-bottom: 50px">                                                                                     
+					                                                                                                                    
+						<h:commandLink  action="#{controlproductos.consultar()}" value="Ingresar Producto">                  
+							<f:attribute name="tipo" value="top"/>                                                                                            
+							<f:attribute name="titulo" value="clientes top"/>                                                                                 
+						</h:commandLink>                                                                                                                      
+						                                                                                                                                      
+						                                                                                                                                      
+						<h:commandLink  action="#{controlproductos.consultar()}" value="Listar Producto">               
+							<f:attribute name="tipo" value="todos"/>                                                                                          
+							<f:attribute name="titulo" value="todos los clientes"/>                                                                           
+						</h:commandLink>                                                                                                                      
+						                                                                                                                                      
+						                                                                                                                                      
+						                                                                                                                                      
+					</h:panelGrid>                                                                                                                            
+				                                                                                                                                              
+				                                                                                                                                              
+				</h:form>                                                                                                                                     
+		                                                                                                                                                      
+		</ui:composition>                                                                                                                                     
+                                                                                                                                                              
+</body>                                                                                                                                                       
+</html>                                                                                                                                                       
+                                                                                                                                                              
